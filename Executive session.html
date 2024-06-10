@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: none;
+        background-size: cover;
+    
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+        .container {
+            width: 40%;
+            margin: 20px auto;
+            animation: slideIn 1s;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            animation: fadeInUp 1s;
+        }
+        .training-section {
+            background-color:aliceblue;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 10px;
+            animation: slideInUp 1s;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to the Training Session</h1>
+</header>
+<body background=66.jpeg>
+<div class="container">
+    <section class="training-section" id="section1">
+        <h2>Introduction</h2>
+        <center>
+        <img src=1.webp width="300px" height="200px">
+        <p>Welcome to our training session. We will cover various topics to help you improve your skills.</p>
+        <form action="C:\Users\PC\Desktop\project6\Executive training.html">
+       <button class="btn" onclick="nextSection()">START</button></center></form>
+    </section>
+
+    <section class="training-section" id="section2">
+        <h2>Module 1: Basics</h2>
+        <center>
+            <img src=2.jpeg width="300px" height="200px">
+        <p>In this module, we will cover the basic concepts that are essential for understanding the advanced topics.</p>
+        <form action="C:\Users\PC\Desktop\project6\Executive basic.html">
+        <button class="btn" onclick="nextSection()">START</button></center></form>
+    </section>
+
+    <section class="training-section" id="section3">
+        <h2>Module 2: Advanced Topics</h2>
+        <center>
+            <img src=3.webp  width="300px" height="200px">
+        <p>Here we dive into more complex subjects to help you become an expert.</p>
+        <button class="btn" onclick="nextSection()">START</button></center>
+    </section>
+    
+</div>
+</body>
+</html>
